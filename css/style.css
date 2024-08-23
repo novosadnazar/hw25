@@ -22,3 +22,15 @@ h1, h2, h3, p {
 img {
     display: block;
 }
+
+.item {
+    background-color: palevioletred;
+}
+
+.item:nth-child(2) {
+    background-color: blue;
+} 
+
+.item:nth-child(2) {
+    background-color: turquoise;
+}
