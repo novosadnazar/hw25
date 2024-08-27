@@ -15,5 +15,42 @@
         <li class="item"></li>
     </ul>
 </div>
+<div class="backdrop">
+    <div class="modal">
+      <h2 class="modal-title">Заголовок мадального вікна</h2>
+      <form class="modal-form">
+        <div class="modal-box">
+          <label class="modal-label">Ім'я
+            <input class="modal-input" type="text" required minlength="3" maxlength="20">
+          </label>
+          <svg class="modal-svg" width="20" height="20">
+            <use href="./img/symbol-defs.svg#name"></use>
+          </svg>
+        </div>
+        <div class="modal-box">
+          <label class="modal-label">Телефон
+            <input class="modal-input" type="tel" required minlength="6" maxlength="12"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+          </label>
+          <svg class="modal-svg" width="20" height="20">
+            <use href="./img/symbol-defs.svg#phone"></use>
+          </svg>
+        </div>
+        <div class="modal-box">
+          <label class="modal-label">Пошта
+            <input class="modal-input" type="email" required>
+          </label>
+          <svg class="modal-svg" width="20" height="20">
+            <use href="./img/symbol-defs.svg#mail"></use>
+          </svg>
+        </div>
+        <label class="modal-label">Коментар
+          <textarea name="Коментар" class="modal-coment"></textarea>
+        </label>
+        <input type="checkbox" class="modal-checkbox" required>
+        <button type="submit">Відправити</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
